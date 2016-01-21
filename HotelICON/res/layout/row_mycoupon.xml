@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="3dp" >
+
+    <ImageView
+        android:id="@+id/couponImageView"
+        android:layout_width="90dp"
+        android:layout_height="70dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="3dp"
+        android:orientation="vertical" >
+        
+		<TextView
+		    android:id="@+id/NameTextView"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="3dp"
+		    android:layout_marginBottom="5dp" 
+		    android:text="TextView" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp" >
+		    
+		    <TextView
+		        android:id="@+id/StatusTitleTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Status:"
+		        android:textColor="#FF1010"
+		        android:textSize="10sp" />
+		    
+		    <TextView
+		        android:id="@+id/StatusTextView"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="2dp"
+		        android:textColor="#FF1010"
+		        android:textSize="10sp" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp" >
+		    
+		    <TextView
+		        android:id="@+id/CouponNoTitleTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Coupon No:"
+		        android:textColor="#FF1010"
+		        android:textSize="10sp" />
+		    
+		    <TextView
+		        android:id="@+id/CouponNoTextView"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="2dp"
+		        android:layout_weight="1"
+		        android:textColor="#FF1010"
+		        android:textSize="10sp" />
+
+		</LinearLayout>
+		
+    </LinearLayout>
+	
+</LinearLayout>

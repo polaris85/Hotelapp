@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8" >
+
+    <TextView
+        android:id="@+id/MenuLabel"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#838264"
+        android:gravity="center"
+        android:text="MENU"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="41dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:orientation="vertical" >
+            
+            <Button
+                android:id="@+id/MemberButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:minHeight="40dp"
+                android:text="Member"
+                android:textColor="#838265"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+			
+            <Button
+    	        android:id="@+id/LoginButton"
+        	    android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+	            android:background="#00000000"
+    	        android:gravity="left|center_vertical"
+        	    android:minHeight="40dp"
+            	android:tag="18"
+                android:text="Log in"
+	            android:textSize="15sp" />
+            
+            <LinearLayout
+                android:id="@+id/MemberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <Button
+                	android:id="@+id/MemberProfileButton"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+	                android:layout_marginLeft="30dp"
+    	            android:background="#00000000"
+        	        android:gravity="left|center_vertical"
+            	    android:minHeight="40dp"
+                	android:tag="13"
+                	android:text="Member Profile"
+                	android:textSize="15sp" />
+            
+            	<Button
+	                android:id="@+id/RedeemCouponButton"
+    	            android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+            	    android:layout_marginLeft="30dp"
+                	android:background="#00000000"
+	                android:gravity="left|center_vertical"
+    	            android:minHeight="40dp"
+        	        android:tag="14"
+            	    android:text="Redeem Coupon"
+                	android:textSize="15sp" />
+            
+            	<Button
+                	android:id="@+id/MyCouponButton"
+                	android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+    	            android:layout_marginLeft="30dp"
+        	        android:background="#00000000"
+            	    android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+	                android:tag="15"
+    	            android:text="My Coupon"
+        	        android:textSize="15sp" />
+            
+            	<Button
+	                android:id="@+id/PromotionButton"
+    	            android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+            	    android:layout_marginLeft="30dp"
+                	android:background="#00000000"
+	                android:gravity="left|center_vertical"
+    	            android:minHeight="40dp"
+        	        android:tag="16"
+            	    android:text="Promotion"
+                	android:textSize="15sp" />
+            
+	            <Button
+    	            android:id="@+id/LogoutButton"
+        	        android:layout_width="match_parent"
+            	    android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+	                android:background="#00000000"
+    	            android:gravity="left|center_vertical"
+        	        android:minHeight="40dp"
+            	    android:tag="17"
+                	android:text="Log out"
+	                android:textSize="15sp" />
+            </LinearLayout>
+                                
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#33838265" />
+            
+            <Button
+                android:id="@+id/HotelInformationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:minHeight="40dp"
+                android:tag="1"
+                android:text="Hotel Information"
+                android:textColor="#838265"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/HotelInformationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+	            
+            	<Button
+                	android:id="@+id/AboutHotelButton"
+                	android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+                	android:background="#00000000"
+                	android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+                	android:tag="1"
+                	android:text="About the Hotel"
+                	android:textSize="15sp" />
+            	
+	            	<Button
+    	            android:id="@+id/RoomsButton"
+        	        android:layout_width="match_parent"
+            	    android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+	                android:background="#00000000"
+    	            android:gravity="left|center_vertical"
+        	        android:minHeight="40dp"
+            	    android:tag="2"
+                	android:text="Rooms"
+	                android:textSize="15sp" />
+	
+    	        <Button
+        		    android:id="@+id/AboveBeyondButton"
+                	android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+    	            android:layout_marginLeft="30dp"
+        	        android:background="#00000000"
+            	    android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+	                android:tag="3"
+    	            android:text="Above &amp; Beyond"
+        	        android:textSize="15sp" />
+            	
+	            <Button
+    	            android:id="@+id/DiningButton"
+        	        android:layout_width="match_parent"
+            	    android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+	                android:background="#00000000"
+    	            android:gravity="left|center_vertical"
+        	        android:minHeight="40dp"
+            	    android:tag="4"
+                	android:text="Dining"
+	                android:textSize="15sp" />
+            
+    	        <Button
+        	        android:id="@+id/FacilitiesButton"
+            	    android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+	                android:layout_marginLeft="30dp"
+    	            android:background="#00000000"
+        	        android:gravity="left|center_vertical"
+            	    android:minHeight="40dp"
+                	android:tag="5"
+	                android:text="Facilities"
+    	            android:textSize="15sp" />
+        	                
+            	<Button
+                	android:id="@+id/EventsButton"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+    	            android:layout_marginLeft="30dp"
+        	        android:background="#00000000"
+            	    android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+    	            android:minWidth="40dp"
+        	        android:tag="6"
+            	    android:text="Events"
+                	android:textSize="15sp" />
+            
+	            <Button
+    	            android:id="@+id/OurCityButton"
+        	        android:layout_width="match_parent"
+            	    android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+	                android:background="#00000000"
+    	            android:gravity="left|center_vertical"
+        	        android:minHeight="40dp"
+            	    android:tag="7"
+                	android:text="Our City"
+	                android:textSize="15sp" />
+    	        
+        	    <Button
+            	    android:id="@+id/OfferButton"
+                	android:layout_width="match_parent"
+	                android:layout_height="wrap_content"    	            
+        	        android:layout_marginLeft="30dp"
+            	    android:background="#00000000"
+                	android:gravity="left|center_vertical"
+	                android:minHeight="40dp"
+    	            android:tag="8"
+        	        android:text="Offers"
+            	    android:textSize="15sp" />
+            </LinearLayout>
+
+            
+            
+            <TextView
+        		android:layout_width="match_parent"
+        		android:layout_height="1dp"
+        		android:layout_marginTop="10dp"
+        		android:background="#33838265" />
+            
+            <Button
+                android:id="@+id/AboutUsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:minHeight="40dp"
+                android:tag="1"
+                android:text="About US"
+                android:textColor="#838265"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/AboutUsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+        	    
+                <Button
+	                android:id="@+id/LocationContactsButton"
+    	            android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+            	    android:background="#00000000"
+	                android:gravity="left|center_vertical"
+    	            android:minHeight="40dp"
+        	        android:tag="9"
+            	    android:text="Location &amp; Contacts"
+                	android:textSize="15sp" />
+            
+	            <Button
+    	            android:id="@+id/PressButton"
+        	        android:layout_width="match_parent"
+            	    android:layout_height="wrap_content"
+                	android:layout_marginLeft="30dp"
+	                android:background="#00000000"
+    	            android:gravity="left|center_vertical"
+        	        android:minHeight="40dp"
+            	    android:minWidth="5dp"
+                	android:tag="10"
+	                android:text="Press"
+    	            android:textSize="15sp" />
+            
+        	    <Button
+	                android:id="@+id/CareersEducationButton"
+    	            android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+            	    android:layout_marginLeft="30dp"
+                	android:background="#00000000"
+	                android:gravity="left|center_vertical"
+    	            android:minHeight="40dp"
+        	        android:tag="11"
+            	    android:text="Careers &amp; Education"
+                	android:textSize="15sp" />
+            
+            	<Button
+	                android:id="@+id/PrivacyButton"
+    	            android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"                
+            	    android:layout_marginLeft="30dp"
+                	android:background="#00000000"
+	                android:gravity="left|center_vertical"
+    	            android:minHeight="40dp"
+        	        android:tag="12"
+            	    android:text="Privacy"
+                	android:textSize="15sp" />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#33838265" />
+            
+            <Button
+                android:id="@+id/LanguageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:minHeight="40dp"
+                android:tag="1"
+                android:text="Language"
+                android:textColor="#838265"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <Button
+                	android:id="@+id/EnglishButton"
+                	android:layout_width="0dp"
+                	android:layout_height="wrap_content"
+                	android:layout_marginBottom="10dp"
+                	android:layout_marginLeft="30dp"
+                	android:layout_weight="1"
+                	android:background="#00000000"
+                	android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+                	android:tag="12"
+                	android:text="English"
+                	android:textSize="15sp" />
+                
+                <Button
+                	android:id="@+id/TraditionalChineseButton"
+                	android:layout_width="0dp"
+                	android:layout_height="wrap_content"
+                	android:layout_marginBottom="10dp"
+                	android:layout_weight="1"
+                	android:background="#00000000"
+                	android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+                	android:tag="12"
+                	android:text="繁體中文"
+                	android:textSize="15sp" />
+                
+                <Button
+                	android:id="@+id/SimplifiedChineseButton"
+                	android:layout_width="0dp"
+                	android:layout_height="wrap_content"
+                	android:layout_marginBottom="10dp"
+                	android:layout_marginRight="30dp"
+                	android:layout_weight="1"
+                	android:background="#00000000"
+                	android:gravity="left|center_vertical"
+                	android:minHeight="40dp"
+                	android:tag="12"
+                	android:text="简体中文"
+                	android:textSize="15sp" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

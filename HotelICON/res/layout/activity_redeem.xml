@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EEEEEE" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Hotel-ICON"
+            android:textColor="#838265"
+            android:textSize="17sp" />
+        
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header_back"
+            android:onClick="onClickBack" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33838265" />
+	
+    <ImageView
+        android:id="@+id/CouponImageView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="fitXY" />
+    
+    <TextView
+        android:id="@+id/SCITitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Selected Coupon Information"
+        android:textColor="#FF1010" />
+    
+     	<LinearLayout
+     	    android:layout_width="match_parent"
+     	    android:layout_height="wrap_content"
+     	    android:layout_marginLeft="5dp"
+     	    android:layout_marginRight="5dp"
+     	    android:layout_marginTop="5dp"
+     	    android:gravity="center_vertical"
+     	    android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/QuantityTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/QuantityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right|center_vertical"
+                android:text="1"
+                android:textSize="12sp" />
+    </LinearLayout>
+    
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:background="#33838265" />
+   
+    <TextView
+        android:id="@+id/RDTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Redeem Detail"
+        android:textColor="#FF1010" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/SubTotalTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub-Totoal:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/SubTotalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right|center_vertical"
+                android:onClick="onClickQuantity"
+                android:text="1"
+                android:textSize="12sp" />
+
+    </LinearLayout>
+    
+   	<TextView
+   	    android:layout_width="match_parent"
+   	    android:layout_height="1dp"
+   	    android:layout_marginLeft="5dp"
+   	    android:layout_marginRight="5dp"
+   	    android:background="#33838265" />
+   	
+   	<LinearLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginLeft="5dp"
+   	    android:layout_marginRight="5dp"
+   	    android:layout_marginTop="5dp"
+   	    android:gravity="center_vertical"
+   	    android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TotalTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Totoal:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TotalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="right|center_vertical"
+                android:onClick="onClickQuantity"
+                android:text="1"
+                android:textSize="12sp" />
+
+    </LinearLayout>
+    
+   	<TextView
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:background="#33838265" />
+   	
+   	<Button
+       android:id="@+id/RedeemButton"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginBottom="30dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginTop="30dp"
+       android:background="#81B740"
+       android:text="Redeem"
+       android:textColor="#FF1010" 
+       android:onClick="onClickRedeem" />
+</LinearLayout>
